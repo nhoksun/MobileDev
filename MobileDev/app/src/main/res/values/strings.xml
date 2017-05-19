@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Example Android</string>
+    <string name="button_bt">Bài tập</string>
+
+    <!--                Lab 01               -->
+    <string name="welcome_lab_1">Welcom to StarCraft II</string>
+    <string name="ten">Lại Hồng Phát - 1311060944</string>
+    <string name="Lab2">Input Text Here!!!</string>
+    <string-array name="phep_toan">
+        <item>Phép Toán Cộng</item>
+        <item>Phép Toán Trừ</item>
+        <item>Phép Toán Nhân</item>
+        <item>Phép Toán Chia</item>
+    </string-array>
+
+    <!--                Lab 02               -->
+    <string name="title_clear">Clear</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_exit">Exit</string>
+    <string name="message_caption">Message</string>
+    <string name="message_content">You Select to clear text</string>
+    <string name="close">Close</string>
+    <string name="exit_caption">Exit?</string>
+    <string name="exit_content">Would you like to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="forecolor">ForeColor</string>
+    <string name="backcolor">BackColor</string>
+    <string name="clear_shortcut">Clear</string>
+    <string name="setting_shortcut">Settings</string>
+    <string name="exit_shortcut">Exit</string>
+    <string-array name="color_name_array">
+        <item name="red">Red</item>
+        <item name="orange">Orange</item>
+        <item name ="yellow">Yellow</item>
+        <item name="green">Green</item>
+        <item name="blue">Blue</item>
+        <item name="indigo">Indigo</item>
+        <item name="violet">Violet</item>
+    </string-array>
+        <string-array name="color_array">
+            <item>#ff0000</item>
+            <item>#ff5500</item>
+            <item>#ffff00</item>
+            <item>#00ff00</item>
+            <item>#0000ff</item>
+            <item>#4b0082</item>
+            <item>#ee82ee</item>
+        </string-array>
+
+    <!--                Lab 03               -->
+
+</resources>

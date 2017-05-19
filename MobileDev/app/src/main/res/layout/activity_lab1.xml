@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sun.mobiledev.Lab1Activity"
+    android:background="@drawable/example_lab1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:shadowColor="@android:color/holo_blue_bright"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1.5"
+        android:text="@string/welcome_lab_1"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="35sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/ten" />
+
+    <Button
+        android:id="@+id/btn_next_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next XML \n Lab1_Second"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="gotoSecondActivity"/>
+</RelativeLayout>

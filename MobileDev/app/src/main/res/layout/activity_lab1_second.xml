@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:id="@+id/relativeLayout_1">
+
+    <EditText
+        android:id="@+id/edtTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnHello"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/btnHello"
+        android:inputType="textPersonName"
+        tools:text="Nhập Họ Tên" />
+
+    <Button
+        android:id="@+id/btnHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="Hello"
+        android:onClick="showMe"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTen"
+        android:layout_marginTop="50dp"
+        android:id="@+id/relativeLayout_2">
+        <TextView
+            android:id="@+id/tv_calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minh họa Calculator đơn giản"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edt_Number_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_calc"
+            android:inputType="numberSigned" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_Number_1"
+            android:id="@+id/spn_PhepToan"
+            android:entries="@array/phep_toan">
+        </Spinner>
+
+        <EditText
+            android:id="@+id/edt_Number_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spn_PhepToan"
+            android:inputType="numberSigned" />
+
+        <Button
+            android:id="@+id/btn_calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/edt_Number_2"
+            android:onClick="calculation"
+            android:text="Calculation" />
+
+        <TextView
+            android:id="@+id/tv_text_ket_qua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_calc"
+            android:textSize="20dp"
+            android:text="Kết Quả = "/>
+
+        <TextView
+            android:id="@+id/tv_ket_qua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/tv_text_ket_qua"
+            android:layout_toEndOf="@+id/tv_text_ket_qua" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout_3"
+        android:layout_below="@id/relativeLayout_2"
+        android:background="@color/back"
+        >
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+        android:id="@+id/btnRed"
+        android:layout_alignParentLeft="true"
+        android:background="@color/red"
+        android:text="red"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnOrange"
+            android:background="@color/orange"
+            android:text="orange"
+            android:layout_toRightOf="@id/btnRed"
+            android:layout_below="@id/btnRed"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnYellow"
+            android:background="@color/yellow"
+            android:text="yellow"
+            android:layout_toRightOf="@id/btnOrange"
+            android:layout_below="@id/btnOrange"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGreen"
+            android:background="@color/green"
+            android:text="green"
+            android:layout_toRightOf="@id/btnYellow"
+            android:layout_below="@id/btnYellow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBlue"
+            android:background="@color/blue"
+            android:text="blue"
+            android:layout_toLeftOf="@id/btnGreen"
+            android:layout_below="@id/btnGreen"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnIndigo"
+            android:background="@color/indigo"
+            android:text="indigo"
+            android:layout_toLeftOf="@id/btnBlue"
+            android:layout_below="@id/btnBlue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnViolet"
+            android:background="@color/violet"
+            android:text="violet"
+            android:layout_toLeftOf="@id/btnIndigo"
+            android:layout_below="@id/btnIndigo"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

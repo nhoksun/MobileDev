@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sun.mobiledev.Lab2Activity"
+    android:orientation="vertical"
+    android:id="@+id/Container_Lab2">
+
+    <TextView
+        android:id="@+id/textView_Lab2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Lab2"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+        android:id="@+id/edit_text_lab2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:text="Demo" />
+
+    </ScrollView>
+
+
+    <!--<android.support.design.widget.BottomNavigationView-->
+        <!--android:id="@+id/navigation"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="?android:attr/windowBackground"-->
+        <!--app:menu="@menu/menu_lab2"/>-->
+
+</LinearLayout>
